@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.timxekhach">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Tìm Xe Khách"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".DBXe.ArrayXe"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".NewPassword" />
+        <activity android:name=".CodeForgotPassword" />
+        <activity
+            android:name=".ForgotPassword"
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".DBLog.ArrayLog"/>
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".DBUser.UserInformation" />
+        <activity android:name=".DBLog.LogInformation" />
+        <activity android:name=".DBXe.XeInformation" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SignUpActivity" />
+        <activity
+            android:name=".StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

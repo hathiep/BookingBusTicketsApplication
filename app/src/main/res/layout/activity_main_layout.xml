@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCF5FB"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainLayOut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:background="@drawable/main_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="serif"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="Chào bạn!"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:textColor="#2962FF"
+            android:textStyle="italic"
+            android:text="Hôm nay bạn muốn đi đâu?"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_edt"
+            android:layout_marginTop="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vien_edt"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="10dp"
+                android:text="Nơi xuất phát"
+                android:textSize="18sp"
+                android:fontFamily="serif"
+                android:textStyle="italic"
+                android:textColor="@android:color/black"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/edt_start"
+                android:layout_below="@+id/tv_start"
+                android:background="@drawable/vien"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="10dp"
+                android:hint="Nhập điểm xuất phát"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"/>
+
+            <ImageButton
+                android:id="@+id/ibt_reverse"
+                android:layout_below="@+id/edt_start"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_reverse2"/>
+
+            <TextView
+                android:id="@+id/tv_end"
+                android:layout_below="@+id/edt_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="10dp"
+                android:text="Bạn muốn đi đâu?"
+                android:textSize="18sp"
+                android:fontFamily="serif"
+                android:textStyle="italic"
+                android:textColor="@android:color/black"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/edt_end"
+                android:layout_below="@+id/tv_end"
+                android:background="@drawable/vien"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="10dp"
+                android:hint="Nhập điểm đến"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_ds"
+            android:layout_below="@+id/rl_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg"
+            android:text="Tìm chuyến xe của bạn"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

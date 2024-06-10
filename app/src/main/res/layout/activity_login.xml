@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:animateLayoutChanges="true"
+android:background="@drawable/grad_bg"
+tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_login"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/logo"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:fontFamily="sans-serif-medium"-->
+<!--            android:text="Tìm Xe Khách"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="30sp" />-->
+
+        <LinearLayout
+            android:id="@+id/linlay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Username"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFF200"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/icon_user2"
+                    android:background="@drawable/vien"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Tên đăng nhập"
+                    android:textColor="@android:color/black"
+                    android:inputType="textPersonName"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Password"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFF200"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/icon_password2"
+                    android:background="@drawable/vien"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Mật khẩu"
+                    android:textColor="@android:color/black"
+                    android:inputType="textPassword"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/linlay1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="ĐĂNG NHẬP"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/quenmk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-130dp"
+            android:background="@color/transparent"
+            android:fontFamily="sans-serif-medium"
+            android:text="QUÊN MẬT KHẨU?"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/suggestion"
+            android:layout_below="@id/login"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="70dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Bạn chưa có tài khoản ?"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/SignUp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/transparent"
+            android:fontFamily="sans-serif-medium"
+            android:text= "Đăng kí"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

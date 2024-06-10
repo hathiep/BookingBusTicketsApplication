@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/grad_bg"
+    tools:context=".SignUpActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rellay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Đăng kí"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:id="@+id/linlay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_login"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Username"
+                    android:textColor="#FFF200"
+                    android:textSize="15sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Tên đăng nhập"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/vien"
+                    android:fontFamily="sans-serif-light"
+                    android:drawableLeft="@drawable/icon_user2"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:inputType="textPersonName"
+                    android:id="@+id/Account"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Fullname"
+                    android:textColor="#FFFFF200"
+                    android:textSize="15sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Họ và tên"
+                    android:background="@drawable/vien"
+                    android:fontFamily="sans-serif-light"
+                    android:drawableLeft="@drawable/icon_username"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:inputType="textPersonName"
+                    android:id="@+id/fullname"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Email"
+                    android:textColor="#FFFFF200"
+                    android:textSize="15sp" />
+                <EditText
+                    android:id="@+id/gmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="abc@gmail.com"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/vien"
+                    android:fontFamily="sans-serif-light"
+                    android:drawableLeft="@drawable/icon_email"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@android:color/black"
+                    android:inputType="textEmailAddress"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Password"
+                    android:textColor="#FFFFF200"
+                    android:textSize="15sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/vien"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Mật khẩu"
+                    android:drawableLeft="@drawable/icon_password2"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:id="@+id/pass"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Password Again"
+                    android:textColor="#FFFFF200"
+                    android:textSize="15sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/vien"
+                    android:fontFamily="sans-serif-light"
+                    android:drawableLeft="@drawable/icon_password2"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:hint="Mật khẩu"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:id="@+id/pass2"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/SignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/linlay1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:text="ĐĂNG KÍ"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

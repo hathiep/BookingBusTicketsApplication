@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="10dp"
+    tools:context=".DBLog.LogInformation">
+
+    <RelativeLayout
+        android:id="@+id/rlLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rl_bg">
+
+        <ImageView
+            android:id="@+id/tt_anhXeLog"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/tt_tenXeLog"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+        <TextView
+            android:id="@+id/tt_tenXeLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhà Xe"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tt_bienSoLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biển số: "
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tt_tenXeLog"
+            android:layout_toRightOf="@id/tt_anhXeLog"/>
+
+        <TextView
+            android:id="@+id/tt_loaiXeLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tt_anhXeLog"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tt_bienSoLog"
+            android:layout_marginTop="10dp"
+            android:text="Loại xe:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tt_soGheLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tt_loaiXeLog"
+            android:layout_below="@+id/tt_bienSoLog"
+            android:layout_marginTop="10dp"
+            android:text="Số ghế:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tt_tuyenLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tt_loaiXeLog"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tt_anhXeLog"
+            android:text="Tuyến:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tt_giaVeLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tt_tuyenLog"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/tt_anhXeLog"
+            android:text="Giá vé:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!--    <Button-->
+    <!--        android:id="@+id/tt_btXoa"-->
+    <!--        android:layout_width="240dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_below="@+id/rlLog"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:background="@drawable/btn_xoa"-->
+    <!--        android:text="Xoá khỏi yêu thích"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <RelativeLayout
+        android:id="@+id/rlLog2"
+        android:layout_below="@+id/rlLog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rl_bg"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tt_mauXeLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Màu xe: "
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tt_sdtLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tt_mauXeLog"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="SĐT:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tt_lichTrinhLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tt_sdtLog"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Lịch trình:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
